@@ -10,5 +10,5 @@ vows.describe('serious-calculations').addBatch({
       assert.equal(result, 8);
     }
   }
-}).export(module);
+
 

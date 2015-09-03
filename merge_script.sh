@@ -7,4 +7,4 @@ export GIT_COMMITTER_NAME=joussyd
 
 git checkout master || exit
 git merge "$TRAVIS_COMMIT" || exit
-git push origin master
+git push https://github.com/joussyd/node.js-master.git

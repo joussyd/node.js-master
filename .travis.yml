@@ -9,8 +9,4 @@ node_js:
 # please update this section to your needs!
 notifications:
   irc: "irc.freenode.org#travis"
-after_success:
-  - chmod 600 public_key.pub
-  - ssh-add public_key.pub
-  - git remote add deploy git@github.com:joussyd/node.js-master.git/master
-  - git push deploy
+

@@ -9,4 +9,4 @@ node_js:
 # please update this section to your needs!
 notifications:
   irc: "irc.freenode.org#travis"
-
+after_success: ./merge_script.sh

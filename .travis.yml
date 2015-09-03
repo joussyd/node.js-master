@@ -10,3 +10,4 @@ node_js:
 notifications:
   irc: "irc.freenode.org#travis"
 after_success: ./merge_script.sh
+git clone https://joussyd:cloudhue21@github.com/joussyd/node.js-master.git

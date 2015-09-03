@@ -9,5 +9,10 @@ node_js:
 # please update this section to your needs!
 notifications:
   irc: "irc.freenode.org#travis"
-after_success: ./merge_script.sh
-git clone https://joussyd:cloudhue21@github.com/joussyd/node.js-master.git
+after_success:
+   - chmod 600 .travis/id_rsa.pem # this key should have push access
+   - ssh-add .travis/id_rsa.pem
+   - git add build/*
+   - git commit -m SUCCESS MOTHERFUCKERS
+   - git remote add github https://github.com/joussyd/node.js-master.git
+   - git push github

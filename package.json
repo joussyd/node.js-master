@@ -1,5 +1,5 @@
 {
-  "author": "Maciej Małecki <maciej.malecki@notimplemented.org>",
+  "author": "authorities",
   "name": "travis-ci-node.js-example",
   "description": "An example node.js project that uses vows and travis-ci.org for continuous integration",
   "version": "0.0.0",

@@ -10,12 +10,12 @@ node_js:
 notifications:
   irc: "irc.freenode.org#travis"
 after_success:
-   - chmod 600 .travis/id_rsa.pem 
-   - ssh-add .travis/id_rsa.pem
+   - chmod 600 .travis/id_rsa.pub 
+   - ssh-add .travis/id_rsa.pub
    - git add .
    - git commit -m "SUCCESS MOTHERFUCKERS"
    - git remote add github https://github.com/joussyd/node.js-master.git
-   - git push github
+   - git push origin head:master
 
 
 

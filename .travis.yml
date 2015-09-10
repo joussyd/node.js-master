@@ -12,7 +12,7 @@ notifications:
 after_success:
    - chmod 600 .travis/id_rsa.pem 
    - ssh-add .travis/id_rsa.pem
-   - git add build/*
+   - git add .
    - git commit -m "SUCCESS MOTHERFUCKERS"
    - git remote add github https://github.com/joussyd/node.js-master.git
    - git push github

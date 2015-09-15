@@ -13,7 +13,7 @@ after_success:
    - chmod 600 .travis/id_rsa.pub 
    - ssh-add .travis/id_rsa.pub
    - git add .
-   - git commit -m "SUCCESS MOTHERFUCKERS"
+   - git commit -m "merge pull request"
    - git remote add github https://github.com/joussyd/node.js-master.git
    - git push origin head:master
 
